@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import {Button} from 'antd'
+import 'antd/dist/antd.css'
+import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props){
+    super(props)
+  }
+  render(){
+    return (
+      <div className="App">
+        <header className="App-header">
+          <Button type="primary" onClick={(e)=>{this.skip(e)}}>Start App</Button>
+        </header>
+      </div>
+    )
+  }
+  skip(e){
+    console.log(this);
+    this.props.history.push({pathname:'/task'})
+  }
+  
 }
 
 export default App;

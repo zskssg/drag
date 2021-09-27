@@ -1,0 +1,21 @@
+
+{
+  "studyLists":[
+    {
+      "title":"任务一",
+      "type":"studyLists"
+    },
+    {
+      "title":"任务二",
+      "type":"studyLists"
+    },
+    {
+      "title":"任务三",
+      "type":"studyLists"
+    }
+
+  ],
+  "studyLists2":[],
+  "studyLists3":[]
+}
+
